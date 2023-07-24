@@ -20,7 +20,7 @@
             <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" width="72px" alt="Logo">
             <h1 class="h3 mb-3 mt-3 mb-4">Iniciar sesión</h1>
             <div class="div-msg-error" style="display: none">
-                <p id="msg-error" class="mt-0 mb-0"> EL usuario o la contraseña son incorrectos</p>
+                <p id="msg-error" class="mt-0 mb-0"></p>
             </div>
             <div class="mt-3 text-start">
                 <label for="correo" class="form-label">Correo electrónico</label>
@@ -111,9 +111,20 @@
                     // Procesar la respuesta del servlet si es necesario
                     console.log("Respuesta del servidor:", response);
 
-                    if (response.status === 'success') {
 
-                        setTimeout(() => {
+                    $("#loading").hide();
+                    $("#txt-btn").show();
+
+                    if(response.error){
+                        $(".div-msg-error").show();
+                        $('#msg-error').text(response.message);
+                    }else {
+                        window.location.href = "dashboard";
+                    }
+
+                   /* if (response.status === 'success') {
+
+                        /*setTimeout(() => {
                                 window.location.href = "dashboard";
                             },
                             1000)
@@ -121,7 +132,7 @@
 
                     } else {
 
-                    }
+                    } */
                 },
                 error: function (error) {
                     loading = false;

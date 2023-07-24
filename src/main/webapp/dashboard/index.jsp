@@ -1,438 +1,358 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Manuel
-  Date: 22/07/2023
-  Time: 06:51 p. m.
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!doctype html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Panel de control</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <title>SIGEV | Inicio </title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="/assets/plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/assets/css/adminlte.min.css">
 </head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
 
-<body>
-<header class="navbar mi-navbar sticky-top  flex-md-nowrap p-0 shadow">
-    <div class="navbar-brand col-md-3 col-lg-2 me-0 px-3">
-    </div>
-    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Menu">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="navbar-nav">
-        <div class="nav-item text-nowrap">
-            <p class="px-3">Mi perfil</p>
-        </div>
-    </div>
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+                <a href="index3.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+                <a href="#" class="nav-link">Contact</a>
+            </li>
+        </ul>
 
+        <!-- Right navbar links -->
+        <ul class="navbar-nav ml-auto">
+            <!-- Navbar Search -->
+            <li class="nav-item">
+                <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                    <i class="fas fa-search"></i>
+                </a>
+                <div class="navbar-search-block">
+                    <form class="form-inline">
+                        <div class="input-group input-group-sm">
+                            <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                            <div class="input-group-append">
+                                <button class="btn btn-navbar" type="submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </li>
 
-</header>
-
-<div class="container-fluid">
-    <div class="row">
-        <nav id="sidebarMenu" class=" col-sm-2 col-md-2 col-lg-2 col-xl-2 d-md-block bg-light sidebar collapse">
-            <div class="position-sticky pt-3">
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                 stroke-linejoin="round" class="feather feather-home" aria-hidden="true">
-                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                            </svg>
-                            Inicio
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                 stroke-linejoin="round" class="feather feather-file" aria-hidden="true">
-                                <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
-                                <polyline points="13 2 13 9 20 9"></polyline>
-                            </svg>
-                            Eventos
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                 stroke-linejoin="round" class="feather feather-shopping-cart" aria-hidden="true">
-                                <circle cx="9" cy="21" r="1"></circle>
-                                <circle cx="20" cy="21" r="1"></circle>
-                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-                            </svg>
-                            Productos
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                 stroke-linejoin="round" class="feather feather-users" aria-hidden="true">
-                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                <circle cx="9" cy="7" r="4"></circle>
-                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                            </svg>
-                            clientes
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                 stroke-linejoin="round" class="feather feather-bar-chart-2" aria-hidden="true">
-                                <line x1="18" y1="20" x2="18" y2="10"></line>
-                                <line x1="12" y1="20" x2="12" y2="4"></line>
-                                <line x1="6" y1="20" x2="6" y2="14"></line>
-                            </svg>
-                            Reportes
-                        </a>
-                    </li>
-                </ul>
-                <h6
-                        class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                    <span>Reportes generados</span>
-                    <a class="link-secondary" href="#" aria-label="Add a new report">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                             stroke-linejoin="round" class="feather feather-plus-circle" aria-hidden="true">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <line x1="12" y1="8" x2="12" y2="16"></line>
-                            <line x1="8" y1="12" x2="16" y2="12"></line>
-                        </svg>
+            <!-- Messages Dropdown Menu -->
+            <li class="nav-item dropdown">
+                <a class="nav-link" data-toggle="dropdown" href="#">
+                    <i class="far fa-comments"></i>
+                    <span class="badge badge-danger navbar-badge">3</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                    <a href="#" class="dropdown-item">
+                        <!-- Message Start -->
+                        <div class="media">
+                            <img src="/assets/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                            <div class="media-body">
+                                <h3 class="dropdown-item-title">
+                                    Brad Diesel
+                                    <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                                </h3>
+                                <p class="text-sm">Call me whenever you can...</p>
+                                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                            </div>
+                        </div>
+                        <!-- Message End -->
                     </a>
-                </h6>
-                <ul class="nav flex-column mb-2">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                 stroke-linejoin="round" class="feather feather-file-text" aria-hidden="true">
-                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                                <polyline points="14 2 14 8 20 8"></polyline>
-                                <line x1="16" y1="13" x2="8" y2="13"></line>
-                                <line x1="16" y1="17" x2="8" y2="17"></line>
-                                <polyline points="10 9 9 9 8 9"></polyline>
-                            </svg>
-                            Mes actual
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                 stroke-linejoin="round" class="feather feather-file-text" aria-hidden="true">
-                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                                <polyline points="14 2 14 8 20 8"></polyline>
-                                <line x1="16" y1="13" x2="8" y2="13"></line>
-                                <line x1="16" y1="17" x2="8" y2="17"></line>
-                                <polyline points="10 9 9 9 8 9"></polyline>
-                            </svg>
-                            Hace 6 meses
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                 stroke-linejoin="round" class="feather feather-file-text" aria-hidden="true">
-                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                                <polyline points="14 2 14 8 20 8"></polyline>
-                                <line x1="16" y1="13" x2="8" y2="13"></line>
-                                <line x1="16" y1="17" x2="8" y2="17"></line>
-                                <polyline points="10 9 9 9 8 9"></polyline>
-                            </svg>
-                            Clientes
-                        </a>
-                    </li>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">
+                        <!-- Message Start -->
+                        <div class="media">
+                            <img src="/assets/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                            <div class="media-body">
+                                <h3 class="dropdown-item-title">
+                                    John Pierce
+                                    <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                                </h3>
+                                <p class="text-sm">I got your message bro</p>
+                                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                            </div>
+                        </div>
+                        <!-- Message End -->
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">
+                        <!-- Message Start -->
+                        <div class="media">
+                            <img src="/assets/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                            <div class="media-body">
+                                <h3 class="dropdown-item-title">
+                                    Nora Silvester
+                                    <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                                </h3>
+                                <p class="text-sm">The subject goes here</p>
+                                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                            </div>
+                        </div>
+                        <!-- Message End -->
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+                </div>
+            </li>
+            <!-- Notifications Dropdown Menu -->
+            <li class="nav-item dropdown">
+                <a class="nav-link" data-toggle="dropdown" href="#">
+                    <i class="far fa-bell"></i>
+                    <span class="badge badge-warning navbar-badge">15</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                    <span class="dropdown-header">15 Notifications</span>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">
+                        <i class="fas fa-envelope mr-2"></i> 4 new messages
+                        <span class="float-right text-muted text-sm">3 mins</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">
+                        <i class="fas fa-users mr-2"></i> 8 friend requests
+                        <span class="float-right text-muted text-sm">12 hours</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">
+                        <i class="fas fa-file mr-2"></i> 3 new reports
+                        <span class="float-right text-muted text-sm">2 days</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                    <i class="fas fa-expand-arrows-alt"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+                    <i class="fas fa-th-large"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- /.navbar -->
 
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <a href="index3.html" class="brand-link text-center">
+
+            <span class="brand-text font-weight-light">SIGEV</span>
+        </a>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Sidebar user panel (optional) -->
+            <c:if test="${not empty sesion}">
+            <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                <div class="image">
+                    <img src="/assets/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                </div>
+                <div class="info">
+                    <a href="#" class="d-block"> ${sesion.nombre} ${sesion.apellido1}</a>
+                    <c:if test="${tipoSesion == 'admin'}">
+                        <p class="mb-0 mt-0" style="color: #fff;">Eres <strong>administrador</strong></p>
+                    </c:if>
+                </div>
+
+            </div>
+            </c:if>
+
+            <!-- SidebarSearch Form -->
+            <div class="form-inline">
+                <div class="input-group" data-widget="sidebar-search">
+                    <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+                    <div class="input-group-append">
+                        <button class="btn btn-sidebar">
+                            <i class="fas fa-search fa-fw"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar Menu -->
+            <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    <!-- Add icons to the links using the .nav-icon class
+                         with font-awesome or any other icon font library -->
+                    <li class="nav-item menu-open">
+                        <a href="#" class="nav-link active">
+                            <i class="nav-icon fas fa-tachometer-alt"></i>
+                            <p>
+                                Starter Pages
+                                <i class="right fas fa-angle-left"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link active">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Active Page</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Inactive Page</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-th"></i>
+                            <p>
+                                Simple Link
+                                <span class="right badge badge-danger">New</span>
+                            </p>
+                        </a>
+                    </li>
                 </ul>
-            </div>
-        </nav>
-        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-            <div class=" pt-3 pb-2 mb-3 border-bottom">
-                <h1 class="h2 mt-4">Inicio</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, unde commodi dolorem cumque
-                    nihil sit sequi rerum ea vitae ratione nostrum vero voluptate alias accusamus! Eos quis enim
-                    nemo aliquid!</p>
+            </nav>
+            <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+    </aside>
 
-            </div>
-            <h2> Reporte </h2>
-            <div class="table-responsive">
-                <table class="table table-striped table-sm">
-                    <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Header</th>
-                        <th scope="col">Header</th>
-                        <th scope="col">Header</th>
-                        <th scope="col">Header</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>1,001</td>
-                        <td>random</td>
-                        <td>data</td>
-                        <td>placeholder</td>
-                        <td>text</td>
-                    </tr>
-                    <tr>
-                        <td>1,002</td>
-                        <td>placeholder</td>
-                        <td>irrelevant</td>
-                        <td>visual</td>
-                        <td>layout</td>
-                    </tr>
-                    <tr>
-                        <td>1,003</td>
-                        <td>data</td>
-                        <td>rich</td>
-                        <td>dashboard</td>
-                        <td>tabular</td>
-                    </tr>
-                    <tr>
-                        <td>1,003</td>
-                        <td>information</td>
-                        <td>placeholder</td>
-                        <td>illustrative</td>
-                        <td>data</td>
-                    </tr>
-                    <tr>
-                        <td>1,004</td>
-                        <td>text</td>
-                        <td>random</td>
-                        <td>layout</td>
-                        <td>dashboard</td>
-                    </tr>
-                    <tr>
-                        <td>1,005</td>
-                        <td>dashboard</td>
-                        <td>irrelevant</td>
-                        <td>text</td>
-                        <td>placeholder</td>
-                    </tr>
-                    <tr>
-                        <td>1,006</td>
-                        <td>dashboard</td>
-                        <td>illustrative</td>
-                        <td>rich</td>
-                        <td>data</td>
-                    </tr>
-                    <tr>
-                        <td>1,007</td>
-                        <td>placeholder</td>
-                        <td>tabular</td>
-                        <td>information</td>
-                        <td>irrelevant</td>
-                    </tr>
-                    <tr>
-                        <td>1,008</td>
-                        <td>random</td>
-                        <td>data</td>
-                        <td>placeholder</td>
-                        <td>text</td>
-                    </tr>
-                    <tr>
-                        <td>1,009</td>
-                        <td>placeholder</td>
-                        <td>irrelevant</td>
-                        <td>visual</td>
-                        <td>layout</td>
-                    </tr>
-                    <tr>
-                        <td>1,010</td>
-                        <td>data</td>
-                        <td>rich</td>
-                        <td>dashboard</td>
-                        <td>tabular</td>
-                    </tr>
-                    <tr>
-                        <td>1,011</td>
-                        <td>information</td>
-                        <td>placeholder</td>
-                        <td>illustrative</td>
-                        <td>data</td>
-                    </tr>
-                    <tr>
-                        <td>1,012</td>
-                        <td>text</td>
-                        <td>placeholder</td>
-                        <td>layout</td>
-                        <td>dashboard</td>
-                    </tr>
-                    <tr>
-                        <td>1,013</td>
-                        <td>dashboard</td>
-                        <td>irrelevant</td>
-                        <td>text</td>
-                        <td>visual</td>
-                    </tr>
-                    <tr>
-                        <td>1,014</td>
-                        <td>dashboard</td>
-                        <td>illustrative</td>
-                        <td>rich</td>
-                        <td>data</td>
-                    </tr>
-                    <tr>
-                        <td>1,015</td>
-                        <td>random</td>
-                        <td>tabular</td>
-                        <td>information</td>
-                        <td>text</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            <!-- --------------------------------- -->
-            <div class="table-responsive">
-                <table class="table table-striped table-sm">
-                    <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Header</th>
-                        <th scope="col">Header</th>
-                        <th scope="col">Header</th>
-                        <th scope="col">Header</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>1,001</td>
-                        <td>random</td>
-                        <td>data</td>
-                        <td>placeholder</td>
-                        <td>text</td>
-                    </tr>
-                    <tr>
-                        <td>1,002</td>
-                        <td>placeholder</td>
-                        <td>irrelevant</td>
-                        <td>visual</td>
-                        <td>layout</td>
-                    </tr>
-                    <tr>
-                        <td>1,003</td>
-                        <td>data</td>
-                        <td>rich</td>
-                        <td>dashboard</td>
-                        <td>tabular</td>
-                    </tr>
-                    <tr>
-                        <td>1,003</td>
-                        <td>information</td>
-                        <td>placeholder</td>
-                        <td>illustrative</td>
-                        <td>data</td>
-                    </tr>
-                    <tr>
-                        <td>1,004</td>
-                        <td>text</td>
-                        <td>random</td>
-                        <td>layout</td>
-                        <td>dashboard</td>
-                    </tr>
-                    <tr>
-                        <td>1,005</td>
-                        <td>dashboard</td>
-                        <td>irrelevant</td>
-                        <td>text</td>
-                        <td>placeholder</td>
-                    </tr>
-                    <tr>
-                        <td>1,006</td>
-                        <td>dashboard</td>
-                        <td>illustrative</td>
-                        <td>rich</td>
-                        <td>data</td>
-                    </tr>
-                    <tr>
-                        <td>1,007</td>
-                        <td>placeholder</td>
-                        <td>tabular</td>
-                        <td>information</td>
-                        <td>irrelevant</td>
-                    </tr>
-                    <tr>
-                        <td>1,008</td>
-                        <td>random</td>
-                        <td>data</td>
-                        <td>placeholder</td>
-                        <td>text</td>
-                    </tr>
-                    <tr>
-                        <td>1,009</td>
-                        <td>placeholder</td>
-                        <td>irrelevant</td>
-                        <td>visual</td>
-                        <td>layout</td>
-                    </tr>
-                    <tr>
-                        <td>1,010</td>
-                        <td>data</td>
-                        <td>rich</td>
-                        <td>dashboard</td>
-                        <td>tabular</td>
-                    </tr>
-                    <tr>
-                        <td>1,011</td>
-                        <td>information</td>
-                        <td>placeholder</td>
-                        <td>illustrative</td>
-                        <td>data</td>
-                    </tr>
-                    <tr>
-                        <td>1,012</td>
-                        <td>text</td>
-                        <td>placeholder</td>
-                        <td>layout</td>
-                        <td>dashboard</td>
-                    </tr>
-                    <tr>
-                        <td>1,013</td>
-                        <td>dashboard</td>
-                        <td>irrelevant</td>
-                        <td>text</td>
-                        <td>visual</td>
-                    </tr>
-                    <tr>
-                        <td>1,014</td>
-                        <td>dashboard</td>
-                        <td>illustrative</td>
-                        <td>rich</td>
-                        <td>data</td>
-                    </tr>
-                    <tr>
-                        <td>1,015</td>
-                        <td>random</td>
-                        <td>tabular</td>
-                        <td>information</td>
-                        <td>text</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </main>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1 class="m-0">Starter Page</h1>
+                    </div><!-- /.col -->
+                    <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-right">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active">Starter Page</li>
+                        </ol>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.content-header -->
+
+        <!-- Main content -->
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the bulk of the card's
+                                    content.
+                                </p>
+
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+
+                        <div class="card card-primary card-outline">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the bulk of the card's
+                                    content.
+                                </p>
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div><!-- /.card -->
+                    </div>
+                    <!-- /.col-md-6 -->
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="m-0">Featured</h5>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Special title treatment</h6>
+
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+
+                        <div class="card card-primary card-outline">
+                            <div class="card-header">
+                                <h5 class="m-0">Featured</h5>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Special title treatment</h6>
+
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col-md-6 -->
+                </div>
+                <!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.content -->
     </div>
+    <!-- /.content-wrapper -->
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+        <div class="p-3">
+            <h5>Title</h5>
+            <p>Sidebar content</p>
+        </div>
+    </aside>
+    <!-- /.control-sidebar -->
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+        <!-- To the right -->
+        <div class="float-right d-none d-sm-inline">
+            Anything you want
+        </div>
+        <!-- Default to the left -->
+        <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    </footer>
 </div>
+<!-- ./wrapper -->
 
+<!-- REQUIRED SCRIPTS -->
 
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- jQuery -->
+<script src="/assets/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="/assets/js/adminlte.min.js"></script>
 </body>
-
 </html>

@@ -10,22 +10,129 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6867e21e-5850-4c68-9edf-2957e5a99de1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demoruiz/HelloServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demoruiz/controller/userServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/dashboard/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demoruiz/model/DAO/DaoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demoruiz/model/DAO/UsuarioDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demoruiz/model/Rol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demoruiz/model/Usuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demoruiz/utils/MysqlConector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/adminlte.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/adminlte.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/adminlte.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/adminlte.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/alt/adminlte.components.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/alt/adminlte.components.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/alt/adminlte.components.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/alt/adminlte.components.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/alt/adminlte.core.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/alt/adminlte.core.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/alt/adminlte.core.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/alt/adminlte.core.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/alt/adminlte.extra-components.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/alt/adminlte.extra-components.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/alt/adminlte.extra-components.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/alt/adminlte.extra-components.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/alt/adminlte.light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/alt/adminlte.light.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/alt/adminlte.light.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/alt/adminlte.light.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/alt/adminlte.pages.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/alt/adminlte.pages.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/alt/adminlte.pages.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/alt/adminlte.pages.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/alt/adminlte.plugins.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/alt/adminlte.plugins.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/alt/adminlte.plugins.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/alt/adminlte.plugins.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/AdminLTELogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/avatar2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/avatar3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/avatar4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/avatar5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/boxed-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/boxed-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/credit/american-express.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/credit/cirrus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/credit/mastercard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/credit/paypal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/credit/paypal2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/credit/visa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/default-150x150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/photo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/photo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/photo3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/photo4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/prod-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/prod-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/prod-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/prod-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/prod-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/user1-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/user2-160x160.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/user3-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/user4-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/user5-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/user6-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/user7-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/user8-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/adminlte.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/adminlte.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/adminlte.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/adminlte.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/pages/dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/pages/dashboard2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/pages/dashboard3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/fontawesome-free/css/all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/fontawesome-free/css/all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/fontawesome-free/css/brands.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/fontawesome-free/css/brands.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/fontawesome-free/css/fontawesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/fontawesome-free/css/fontawesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/fontawesome-free/css/regular.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/fontawesome-free/css/regular.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/fontawesome-free/css/solid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/fontawesome-free/css/solid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/fontawesome-free/css/svg-with-js.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/fontawesome-free/css/svg-with-js.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/fontawesome-free/css/v4-shims.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/fontawesome-free/css/v4-shims.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/fontawesome-free/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/fontawesome-free/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/fontawesome-free/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/fontawesome-free/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/fontawesome-free/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/fontawesome-free/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/fontawesome-free/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/fontawesome-free/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/fontawesome-free/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/fontawesome-free/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/fontawesome-free/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/fontawesome-free/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/fontawesome-free/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/fontawesome-free/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/fontawesome-free/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/jquery/jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/jquery/jquery.slim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/jquery/jquery.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/plugins/jquery/jquery.slim.min.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demoruiz/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demoruiz/controller/userServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demoruiz/controller/userServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dashboard/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dashboard/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +142,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Servlet" />
         <option value="Jsp File" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -57,22 +165,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "fileTemplates",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="demoRuiz" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="demoRuiz" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.78" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.78" ALTERNATIVE_JRE_ENABLED="false">
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
@@ -173,6 +294,9 @@
       <option name="presentableId" value="Default" />
       <updated>1690058322550</updated>
       <workItem from="1690058323550" duration="16813000" />
+      <workItem from="1690227152678" duration="237000" />
+      <workItem from="1690227406673" duration="1718000" />
+      <workItem from="1690229222643" duration="11084000" />
     </task>
     <servers />
   </component>
